@@ -5,7 +5,7 @@ const AddProduct = ({valueTitle,valuePrice,onChangeTitle,onChangePrice,addProduc
     return     <View style={styles.inputContainer}>
                     <TextInput 
                     style={styles.input}
-                    placeholder="Nombre"
+                    placeholder="Producto"
                     value={valueTitle}
                     onChangeText={(t)=> onChangeTitle(t)}
                     />
@@ -29,7 +29,8 @@ const styles = StyleSheet.create({
         borderWidth:4,
         paddingHorizontal:10,
         paddingVertical:5,
-        width:150
+        width:150,
+        borderColor: 'blue'
       }
 })
 
