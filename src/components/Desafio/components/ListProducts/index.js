@@ -12,7 +12,8 @@ const ListProduct = ({products,onModal}) => {
 }
 const styles = StyleSheet.create({
     listContainer : {
-                      width:"100%"
+                      width:"100%",
+                      marginBottom:50
                     }
 })
 
