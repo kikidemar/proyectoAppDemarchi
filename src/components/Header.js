@@ -1,26 +1,15 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
-import { colors } from '../global/colors.js'
+import React from 'react';
+import { View } from 'react-native';
+import { Header as RNEHeader, Text } from 'react-native-elements';
+import { colors } from '../global/colors.js';
 
-const Header = ({title}) => {
+const Header = ({ title }) => {
   return (
-    <View style= {styles.container}>
-      <Text style={styles.text}>{title}</Text>
-    </View>
-  )
-}
+    <RNEHeader
+      containerStyle={{ backgroundColor: '#4CAF50', justifyContent: 'space-around', height: 80 }}
+      centerComponent={<Text style={{ fontSize: 20, color: 'white' }}>{title}</Text>}
+    />
+  );
+};
 
-export default Header
-
-const styles = StyleSheet.create({
-  container: {
-    backgroundColor: colors.green1,
-    width: '100%',
-    height: 80,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  text: {
-    fontSize: 20,
-  }
-})
+export default Header;
