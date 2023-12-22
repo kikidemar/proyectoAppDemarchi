@@ -5,7 +5,7 @@ import CardShadow from '../wrappers/CardShadow'
 
 const CategoryItem = ({category, navigation, route}) => {
   return (
-    <Pressable onPress={()=> navigation.navigate('Category', {category})}>
+    <Pressable onPress={()=> navigation.navigate('Category', category)}>
       <CardShadow style={styles.container}>
         <Text style={styles.text}>{category}</Text>
       </CardShadow>
