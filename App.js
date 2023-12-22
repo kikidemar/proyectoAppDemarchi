@@ -1,30 +1,25 @@
 import { useFonts } from 'expo-font'
 import { useState } from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import Desafio from './src/components/Desafio/Desafio'
-import Header from './src/components/Header'
-import Home from './src/screens/Home.js'
-import ItemListCategories from './src/screens/ItemListCategory.js'
+import { StyleSheet, Text, View, SafeAreaView, StatusBar } from 'react-native'
 
-const  App = () => {
+import { colors } from './src/global/colors'
+import { fonts } from './src/global/fonts'
+import Navigator from './src/navigation/Navigator'
 
-  const [categorySelected, setCategorySelected] = useState('')
+const App = () => {
 
-  const [fontLoaded] = useFonts({
-    Lobster:require("./assets/fonts/Lobster-Regular.ttf")
-  })
 
-  if(!fontLoaded) return null
+  const [fontLoaded] = useFonts(fonts)
+
+  if (!fontLoaded) return null
 
   return (
-    <View style={styles.container}>
-      {categorySelected ?
-        <ItemListCategories category = {categorySelected}/>
-        :
-        <Home setCategorySelected={setCategorySelected}/>
-      }
-     
-    </View>
+    <>
+      <StatusBar
+        backgroundColor={colors.green1}
+      />
+      <Navigator />
+    </>
   )
 }
 

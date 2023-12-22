@@ -3,11 +3,10 @@ import React from 'react'
 import Header from '../components/Header.js'
 import Categories from '../components/Categories.js'
 
-export default function Home({setCategorySelected}) {
+export default function Home({navigation, route}) {
   return (
     <>
-      <Header title='Categories'/>
-      <Categories setCategorySelected={setCategorySelected} />
+      <Categories navigation={navigation} route={route} />
     </>
   )
 }
