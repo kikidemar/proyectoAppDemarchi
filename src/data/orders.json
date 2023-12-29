@@ -1,0 +1,96 @@
+[
+  {
+    "id": 1,
+    "user_id": 2,
+    "createdAt": 1670869276580,
+    "items" : [
+      {
+        "id": 8,
+        "title": "Microsoft Surface Laptop 4",
+        "description": "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
+        "price": 1499,
+        "discountPercentage": 10.23,
+        "rating": 4.43,
+        "stock": 68,
+        "brand": "Microsoft Surface",
+        "category": "laptops",
+        "thumbnail": "https://i.dummyjson.com/data/products/8/thumbnail.jpg",
+        "quantity":3,
+        "images": [
+          "https://i.dummyjson.com/data/products/8/1.jpg",
+          "https://i.dummyjson.com/data/products/8/2.jpg",
+          "https://i.dummyjson.com/data/products/8/3.jpg",
+          "https://i.dummyjson.com/data/products/8/4.jpg",
+          "https://i.dummyjson.com/data/products/8/thumbnail.jpg"
+        ]
+      },
+      {
+        "id": 9,
+        "title": "Infinix INBOOK",
+        "description": "Infinix Inbook X1 Ci3 10th 8GB 256GB 14 Win10 Grey – 1 Year Warranty",
+        "price": 1099,
+        "discountPercentage": 11.83,
+        "rating": 4.54,
+        "stock": 96,
+        "brand": "Infinix",
+        "category": "laptops",
+        "quantity":5,
+        "thumbnail": "https://i.dummyjson.com/data/products/9/thumbnail.jpg",
+        "images": [
+          "https://i.dummyjson.com/data/products/9/1.jpg",
+          "https://i.dummyjson.com/data/products/9/2.png",
+          "https://i.dummyjson.com/data/products/9/3.png",
+          "https://i.dummyjson.com/data/products/9/4.jpg",
+          "https://i.dummyjson.com/data/products/9/thumbnail.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "user_id": 2,
+    "createdAt": 1679832276580,
+    "items" : [
+      {
+        "id": 12,
+        "title": "Brown Perfume",
+        "description": "Royal_Mirage Sport Brown Perfume for Men & Women - 120ml",
+        "price": 40,
+        "discountPercentage": 15.66,
+        "rating": 4,
+        "stock": 52,
+        "brand": "Royal_Mirage",
+        "category": "fragrances",
+        "thumbnail": "https://i.dummyjson.com/data/products/12/thumbnail.jpg",
+        "quantity":3,
+        "images": [
+          "https://i.dummyjson.com/data/products/12/1.jpg",
+          "https://i.dummyjson.com/data/products/12/2.jpg",
+          "https://i.dummyjson.com/data/products/12/3.png",
+          "https://i.dummyjson.com/data/products/12/4.jpg",
+          "https://i.dummyjson.com/data/products/12/thumbnail.jpg"
+        ]
+      },
+      {
+        "id": 13,
+        "title": "Fog Scent Xpressio Perfume",
+        "description": "Product details of Best Fog Scent Xpressio Perfume 100ml For Men cool long lasting perfumes for Men",
+        "price": 13,
+        "discountPercentage": 8.14,
+        "rating": 4.59,
+        "stock": 61,
+        "brand": "Fog Scent Xpressio",
+        "category": "fragrances",
+        "thumbnail": "https://i.dummyjson.com/data/products/13/thumbnail.webp",
+        "quantity":7,
+        "images": [
+          "https://i.dummyjson.com/data/products/13/1.jpg",
+          "https://i.dummyjson.com/data/products/13/2.png",
+          "https://i.dummyjson.com/data/products/13/3.jpg",
+          "https://i.dummyjson.com/data/products/13/4.jpg",
+          "https://i.dummyjson.com/data/products/13/thumbnail.webp"
+        ]
+      }
+    ]
+  }
+]

@@ -4,7 +4,7 @@ import { StyleSheet, Text, View, SafeAreaView, StatusBar } from 'react-native'
 
 import { colors } from './src/global/colors'
 import { fonts } from './src/global/fonts'
-import Navigator from './src/navigation/Navigator'
+import TabNavigator from './src/navigation/TabNavigator'
 
 const App = () => {
 
@@ -18,7 +18,7 @@ const App = () => {
       <StatusBar
         backgroundColor={colors.green1}
       />
-      <Navigator />
+      <TabNavigator />
     </>
   )
 }
