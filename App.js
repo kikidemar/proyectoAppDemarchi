@@ -1,10 +1,9 @@
 import { useFonts } from 'expo-font'
-import { useState } from 'react'
-import { StyleSheet, Text, View, SafeAreaView, StatusBar } from 'react-native'
-
-import { colors } from './src/global/colors'
+import { StyleSheet, StatusBar } from 'react-native'
 import { fonts } from './src/global/fonts'
 import TabNavigator from './src/navigation/TabNavigator'
+import { store } from './src/store'
+import { Provider } from 'react-redux'
 
 const App = () => {
 
@@ -15,10 +14,10 @@ const App = () => {
 
   return (
     <>
-      <StatusBar
-        backgroundColor={colors.green1}
-      />
-      <TabNavigator />
+      <StatusBar/>
+      <Provider store={store} >
+        <TabNavigator />
+      </Provider>
     </>
   )
 }
