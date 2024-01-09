@@ -1,9 +1,8 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet} from 'react-native'
 import React from 'react'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import Home from '../screens/Home.js'
 import ItemListCategories from '../screens/ItemListCategory.js'
-import Desafio from '../components/Desafio/Desafio'
 import Header from '../components/Header'
 import ItemDetail from '../screens/ItemDetail.js'
 
