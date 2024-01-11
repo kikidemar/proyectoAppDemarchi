@@ -8,6 +8,6 @@ export const signUpSchema = object({
         .min(6,"minimo 6 caracteres")
         .required("Ingrese un password"),
     confirmPassword:string()
-        .oneOf([ref("password")],"los password no son iguales")
-        .required("vuelva a ingresar el mail")
+        .oneOf([ref("password")],"Los password no son iguales")
+        .required("Vuelva a ingresar el mail")
 })

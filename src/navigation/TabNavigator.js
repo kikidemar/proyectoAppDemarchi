@@ -5,6 +5,7 @@ import { StyleSheet } from 'react-native'
 import { colors } from '../global/colors'
 import OrdersStack from './OrderStack'
 import TabIcon from '../components/TabIcon'
+import ProfileStack from './ProfileStack'
 
 const Tab = createBottomTabNavigator()
 
@@ -37,7 +38,14 @@ const TabNavigator = () => {
             options={{
               tabBarIcon:({focused}) => <TabIcon icon="list" size={40} label="Ordenes" focused={focused}/> 
              }}
-             />
+        />
+        <Tab.Screen 
+            name="ProfileStack" 
+            component={ProfileStack}
+            options={{
+              tabBarIcon:({focused}) => <TabIcon icon="user" label="Perfil" focused={focused}/> 
+            }}
+        />
       </Tab.Navigator>
   )
 }
