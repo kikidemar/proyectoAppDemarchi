@@ -1,12 +1,13 @@
 import { StyleSheet, View,Image } from 'react-native'
 import { useSelector } from 'react-redux'
-import { useGetProfileImageQuery } from '../app/services/shopServices'
+import { useGetProfileImageQuery, useGetUserLocationQuery } from '../app/services/shopServices'
 import AddButton from '../components/AddButton'
 
 
 const MyProfile = ({navigation}) => {
   const localId = useSelector(state => state.auth.value.localId)
   const {data} = useGetProfileImageQuery(localId)
+  const {data:location} = useGetUserLocationQuery(localId)
 
   return (
     <View style={styles.container}>
@@ -18,6 +19,9 @@ const MyProfile = ({navigation}) => {
         <AddButton 
         title={data ? "Cambiar foto de perfil" : "Agregar foto de perfil"} 
         onPress={()=> navigation.navigate("ImageSelector")}/>
+        <AddButton 
+        title={location ?"Cambiar Ubicacion" :"Agregar Ubicacion"} 
+        onPress={()=> navigation.navigate("LocationSelector")}/>
     </View>
   )
 }

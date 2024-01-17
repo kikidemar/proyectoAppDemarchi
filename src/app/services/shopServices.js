@@ -5,7 +5,7 @@ import { base_url } from '../../firebase/db'
 export const shopApi = createApi({
   reducerPath: 'shopApi',
   baseQuery: fetchBaseQuery({ baseUrl: base_url }),
-  tagTypes:['image'],
+  tagTypes:['image', 'location'],
   endpoints: (builder) => ({
     getProducts: builder.query({
       query: (category) => `products.json?orderBy="category"&equalTo="${category}"`,
@@ -28,8 +28,20 @@ export const shopApi = createApi({
       query: (localId) => `profileImage/${localId}.json`,
       providesTags:["image"]
     }),
+    postUserLocation: builder.mutation({
+      query: ({localId,locationFormatted}) => ({
+        url:`userLocation/${localId}.json`,
+        method:"PUT",
+        body:locationFormatted
+      }),
+      invalidatesTags:["location"]
+    }),
+    getUserLocation: builder.query({
+      query: (localId) => `userLocation/${localId}.json`,
+      providesTags:["location"]
+    }),
   }),
 })
 
 
-export const { useGetProductsQuery, useGetProductQuery, useGetCategoriesQuery, usePostProfileImageMutation, useGetProfileImageQuery } = shopApi
+export const { useGetProductsQuery, useGetProductQuery, useGetCategoriesQuery, usePostProfileImageMutation, useGetProfileImageQuery, useGetUserLocationQuery, usePostUserLocationMutation } = shopApi
