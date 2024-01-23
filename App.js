@@ -4,6 +4,13 @@ import { fonts } from './src/global/fonts'
 import { store } from './src/app/store'
 import { Provider } from 'react-redux'
 import MainNavigator from './src/navigation/MainNavigator'
+import { init } from './src/db'
+
+init()
+  .then(()=> console.log('Db Initialized'))
+  .catch(()=> console.log(err))
+
+
 
 const App = () => {
 
