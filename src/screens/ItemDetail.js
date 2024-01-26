@@ -1,11 +1,22 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { View, Image } from 'react-native';
 import { Text, PricingCard } from 'react-native-elements';
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { colors } from '../global/colors';
+import { addItem } from '../features/cart/cartSlice';
+import Toast from 'react-native-toast-message';
+
 
 const ItemDetail = () => {
  
+  const showToast = () => {
+    Toast.show({
+      type: 'success',
+      text1: `${product.title} agregado al carrito con exito`,
+    })
+  }
+
+  const dispatch = useDispatch()
   const product = useSelector((state) => state.shop.value.productSelected)
 
   return (
@@ -20,9 +31,10 @@ const ItemDetail = () => {
       <PricingCard
         color={colors.green1}
         title={`$${product.price}`}
-        button={{ title: 'Buy Now', icon: 'shopping-cart' }}
+        button={{ title: 'Comprar ahora', icon: 'shopping-cart' }}
         onButtonPress={() => {
-          console.log('Buy Now pressed')
+          if (dispatch(addItem(product)))
+          showToast()
         }}
       />
     </View>

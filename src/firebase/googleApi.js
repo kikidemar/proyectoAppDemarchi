@@ -1,3 +1,5 @@
 export const googleApi = {
-  mapStatic:'AIzaSyA463Wk9Xe_Q8QjUOxDbhzNqP-DJGgTDbw'
+  mapStatic:'AIzaSyBCROyaFP_PjrvHo0gN4P5kGbuCelb2VEk'
 }
+
+

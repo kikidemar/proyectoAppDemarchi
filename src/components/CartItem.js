@@ -1,16 +1,30 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { Pressable, StyleSheet, Text, View } from 'react-native'
 import {Entypo} from "@expo/vector-icons"
 import { colors } from '../global/colors'
+import { useDispatch } from 'react-redux'
+import { removeItem } from '../features/cart/cartSlice'
+import Toast from 'react-native-toast-message'
 
 const CartItem = ({item}) => {
+
+  const showToast = () => {
+    Toast.show({
+      type: 'success',
+      text1: `${item.title} eliminado del carrito`,
+    })
+  }
+  const dispatch = useDispatch()
+
   return (
     <View style={styles.container}>
         <View style={styles.textContainer}>
             <Text style={styles.text1}>{item.title}</Text>
             <Text  style={styles.text2}>{item.brand}</Text>
-            <Text  style={styles.text2}>$ {item.price}</Text>
+            <Text  style={styles.text2}>Cantidad: {item.quantity} Precio $ {item.price}</Text>
         </View>
-        <Entypo name='trash' size={25} color={colors.accent}/>
+        <Pressable onPress={()=> {if (dispatch(removeItem(item))) showToast()}}>
+          <Entypo name='trash' size={25} color={colors.accent}/>
+        </Pressable>
     </View>
 
   )
