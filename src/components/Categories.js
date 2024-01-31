@@ -24,6 +24,6 @@ export default Categories
 const styles = StyleSheet.create({
   container: {
     width: '100%',
-    marginBottom:130
+    marginBottom:10
   }
 })

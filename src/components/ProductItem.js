@@ -10,8 +10,8 @@ const ProductItem = ({ item, navigation }) => {
 
   return (
     <Pressable onPress={() => {
-      dispatch(setProductSelected(item.id))
-      navigation.navigate("Product", { id: item.id })
+      // dispatch(setProductSelected(item.id))
+      navigation.navigate("Product", { productId: item.id })
       }}>
       <Card containerStyle={styles.container}>
         <View style={styles.content}>

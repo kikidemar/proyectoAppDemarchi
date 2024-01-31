@@ -57,10 +57,10 @@ const styles = StyleSheet.create({
     backgroundColor: colors.primaryBackground,
     elevation: 4,
     position: 'absolute',
-    bottom: 25,
-    left: 20,
-    right: 20,
-    borderRadius: 15,
-    height: 90
+    bottom: 0,
+    left: 0,
+    right: 0,
+    borderRadius: 0,
+    height: 60
   }
 })

@@ -79,7 +79,7 @@ export default Cart;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginBottom: 130,
+    marginBottom: 60,
   },
   emptyContainer: {
     flex: 1,

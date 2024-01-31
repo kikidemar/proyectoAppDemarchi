@@ -59,6 +59,8 @@ const Signup = ({navigation}) => {
             onChangeText={(t) => setEmail(t)}
             isSecure={false}
             error={emailError}
+            type='email'
+            autoCapitalize="none"
           />
           <InputForm
             label="Password"
@@ -66,6 +68,8 @@ const Signup = ({navigation}) => {
             onChangeText={(t) => setPassword(t)}
             isSecure={true}
             error={passwordError}
+            type='password'
+            autoCapitalize="none"
           />
            <InputForm
             label="Confirm password"
@@ -73,7 +77,8 @@ const Signup = ({navigation}) => {
             onChangeText={(t) => setConfirmPassword(t)}
             isSecure={true}
             error={confirmPasswordError}
-
+            type='password'
+            autoCapitalize="none"
           />
           <SubmitButton title="Send" onPress={onSubmit} 
           />

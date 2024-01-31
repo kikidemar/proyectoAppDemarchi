@@ -42,6 +42,8 @@ const Login = ({navigation}) => {
             onChangeText={(t) => setEmail(t)}
             isSecure = {false}
             error=""
+            type='email'
+            autoCapitalize="none"
           />
           <InputForm
             label="Password"
@@ -49,6 +51,8 @@ const Login = ({navigation}) => {
             onChangeText={(t) => setPassword(t)}
             isSecure={true}
             error=""
+            type='password'
+            autoCapitalize="none"
           />
           <SubmitButton  title="Send" onPress={onSubmit}/>
           <Text style={styles.sub}>Not have an account?</Text>

@@ -21,6 +21,7 @@ const InputForm = ({ label, value, onChangeText, isSecure, error }) => {
         ]}
         onFocus={handleFocus}
         onBlur={handleBlur}
+        autoCapitalize="none"
       />
       {error ? <View><Text style={styles.error}>{error}</Text></View> : null}
     </View>
