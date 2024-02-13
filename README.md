@@ -48,6 +48,7 @@ Una aplicación de comercio electrónico desarrollada con React Native que ofrec
 - **Redux:** Centraliza y gestiona el estado de la aplicación.
 - **RTK Query y Firebase:** Realiza operaciones de lectura/escritura en la base de datos.
 - **Toast-Message:** Se ocupa de notificar ciertas acciones vía toasts.
+- **Expo-Sqlite:** Dependencia encargada de la persistencia de datos del usuario.
 
 ## Instalación
 
