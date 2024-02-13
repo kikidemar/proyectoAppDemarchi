@@ -36,8 +36,8 @@ Una aplicación de comercio electrónico desarrollada con React Native que ofrec
 
 1. **Productos:** Categorías y productos (stack principal).
 2. **Carrito:** Detalles del carrito de compras con resumen, botón para eliminar algún producto seleccionado y botón para finalizar la orden. En el caso de no tener productos en el carrito, aparece un botón que te redirecciona a la pestaña de productos.
-3. **Orders:** Historial de órdenes realizadas.
-4. **Profile:** Pestaña en la cual podés agregar una foto de perfil y ubicación. Ambas opciónes pueden ser modificadas posteriormente.
+3. **Ordenes:** Historial de órdenes realizadas.
+4. **Perfil:** Pestaña en la cual podés agregar una foto de perfil y ubicación. Ambas opciónes pueden ser modificadas posteriormente.
 
 ## Tecnologías Utilizadas
 
