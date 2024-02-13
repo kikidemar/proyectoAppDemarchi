@@ -47,7 +47,7 @@ Una aplicación de comercio electrónico desarrollada con React Native que ofrec
 - **Expo-Image-Picker:** Simplifica la carga de imágenes de perfil.
 - **Redux:** Centraliza y gestiona el estado de la aplicación.
 - **RTK Query y Firebase:** Realiza operaciones de lectura/escritura en la base de datos.
-- **Toast-message:** Se ocupa de notificar ciertas acciones vía toasts.
+- **Toast-Message:** Se ocupa de notificar ciertas acciones vía toasts.
 
 ## Instalación
 
