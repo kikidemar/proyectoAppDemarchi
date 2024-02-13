@@ -48,7 +48,7 @@ Una aplicación de comercio electrónico desarrollada con React Native que ofrec
 - **Redux:** Centraliza y gestiona el estado de la aplicación.
 - **RTK Query y Firebase:** Realiza operaciones de lectura/escritura en la base de datos.
 - **Toast-Message:** Se ocupa de notificar ciertas acciones vía toasts.
-- **Expo-Sqlite:** Dependencia encargada de la persistencia de datos del usuario.
+- **Expo-Sqlite:** Dependencia encargada de la persistencia de las credenciales de los usuario.
 
 ## Instalación
 
@@ -56,6 +56,7 @@ Una aplicación de comercio electrónico desarrollada con React Native que ofrec
 2. Instala las dependencias: `npm install`
 3. Ejecuta la aplicación: `npm start`
 
+En caso de querer descargar la apk para android: `https://expo.dev/artifacts/eas/4az1DySCXKY1o8Jpa8pMtW.apk`
 
 ## Contacto
 
